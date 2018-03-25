@@ -2,7 +2,9 @@
 
 ## Purpose
 
-Define a basic layer of the aircraft model to demonstrate basic structure of a model file and resource.
+LOOK AT PARENT README
+
+---
 
 ## Composer modelling language
 

@@ -2,15 +2,7 @@
 
 ## Purpose
 
-TODO
-
-### Components
-
-- Basic Aircraft
-  - Define a basic layer of the aircraft model to demonstrate basic structure of a model file and resource.
-
-- Participants
-  - In this project we will be creating an abstract role that is then extended by particular specific role types. e.g. A Network Admin, a B2BPartner, A personal participant.
+LOOK AT PARENT README
 
 ---
 
