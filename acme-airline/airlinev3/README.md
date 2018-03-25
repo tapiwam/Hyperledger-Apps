@@ -1,16 +1,26 @@
-# Airline Model Version 2
+# Airline Model Version 3
 
 ## Hyperledger Modelling Notes
-
 
 ### High level Components
 
 - Basic Aircraft
-  - Define a basic layer of the aircraft model to demonstrate basic structure of a model file and resource.
+  - As an airline we have to have some planes right?
+  - Defines a basic structure for an aircraft model respresenting a plane.
 
 - Participants
-  - In this project we will be creating an abstract role that is then extended by particular specific role types. e.g. A Network Admin, a B2BPartner, A personal participant.
-  - `Contact` concept to keep track of users
+  - As the parent case study suggests our system will need to handle various actors or `particitant` definitions. e.g. A Network Admin, a B2BPartner, A personal participant.
+  - An abstract `participant` role is defined with infomation that every participant needs and then this is extended to specific role types with any custom details that each participant type may have.
+  - Further encapsulation is demonstarted by the `Contact` concept to keep track of users. This isn't an explicit `Resource` but can be used in a resource.
+
+- Routing
+  - Let'S say a particular route for ACME flys from [EWR(New York) to HOU], [HOU to SEA] and then from [SEA to EWR].
+  - Each route is assigned a flight number and if it is flow more than once that day it is assigned.
+  - Since ACME has multiple planes with possibly diffent capacity we want the flexiblity to have either the entire route or even portions of a route to be assigned to one of more planes depending on availabilty and demand.
+    - e.g. If a first leg needed a jumbo jet but subscequent flight only needed half the seats a smaller plane can be used for the rest of the route.
+  - Suppose we also have smaller airlines that share flight with ACME Air. Suppose ACME Air(AE101) hosts seats on a flight for Budget air(BU450). In this case BU450 would be an alias for AE101.
+
+---
 
 ### Composer modelling language
 
@@ -50,7 +60,7 @@ These can be used to define custom types.
 - You do not always have to extend an abstract class.
 - You cannot inherit from multiple  classes.
 
-## Concepts
+### Concepts
 
 - Concept = Generic class
 - Can be thought of a way to create generic classes. These do NOT represent Resource.
@@ -58,3 +68,7 @@ These can be used to define custom types.
   - Group together related field. These can be reused within your resources.
   - An example would be an address with fields that are used over and over. An Address concept can be defines which can be used by many kinds of resources.
 - Concepts can be extended much like resources can.
+
+### Arrays
+
+- Defined as []
