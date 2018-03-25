@@ -15,13 +15,13 @@ Name space standard: Namespace.cto
 - Resemble Java class 
 - Has different types e.g. String, Double, Integer, Long , Datetime, Boolean
 - Identified by key word must be used for below
-... asset 
+--- asset 
 ```
 asset Aircraft identified by aircraftId {  
     o String aircraftId
 }
 ```
-... participant 
+--- participant 
 - Optional items - Items that are not always required - optional
 - Default values can be set - default
 
