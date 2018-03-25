@@ -6,7 +6,7 @@ Define a basic layer of the aircraft model to demonstrate basic structure of a m
 
 ## Composer modelling language
 
-- .cto is teh standard extension.
+- .cto is the standard extension.
 - Defines - Participants, Assets, Transactions, Events
 - Has a Namespace
 - Can import other resources in other model files. 
