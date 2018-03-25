@@ -21,8 +21,8 @@ TODO
 - .cto is the standard extension.
 - Defines - Participants, Assets, Transactions, Events
 - Has a Namespace
-- Can import other resources in other model files. 
-- Each namespace must be must used only once
+- Can import other resources in other model files.
+- Each namespace can be used only once.
 - Name space standard: Namespace.cto
 
 ### Resources
@@ -57,8 +57,8 @@ These can be used to define custom types.
 ## Concepts
 
 - Concept = Generic class
-- Can be thoyugh of a way to create generic classes. These do NOT represent Resource.
+- Can be thought of a way to create generic classes. These do NOT represent Resource.
 - How to use?
   - Group together related field. These can be reused within your resources.
-  - An example would be an address with fileds that are used over and over. An Address concept can be defines which can be used by many kinds of resources.
+  - An example would be an address with fields that are used over and over. An Address concept can be defines which can be used by many kinds of resources.
 - Concepts can be extended much like resources can.
