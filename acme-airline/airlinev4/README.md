@@ -97,6 +97,6 @@ These can be used to define custom types.
   - e.g. On a given flight `AE101` there could be a an aircraft ```"aircraft": "org.acme.airline.aircraft.Aircraft#CRAFT0001"```
 - Deletion of a resource
   - The filed returns a null value on the linked resource.
-    - If the aircraft were deleted then null bould be returned
-  - Deletion is uni-deirectional
+    - If the aircraft were deleted then null would be returned
+  - Deletion is uni-directional
     - Suppose in the example above the flight itself is deleted then there would be no change to `CRAFT001`
