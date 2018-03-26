@@ -1,0 +1,33 @@
+namespace org.acme.airline.flight
+
+import org.acme.airline.aircraft.Aircraft
+
+asset Flight identified by flightNumber {
+  o String      flightNumber
+  o Route       route
+  o String[]    aliasFlightNumber // 
+  --> Aircraft  aircraft optional
+}
+
+concept Route {
+  o String    origin
+  o String    destination
+  o DateTime  schedule
+} 
+
+
+/****** Sample data *
+
+{
+  "$class": "org.acme.airline.flight.Flight",
+  "flightNumber": "AE101",
+  "route": {
+    "$class": "org.acme.airline.flight.Route",
+    "origin": "EWR",
+    "destination": "SEA",
+    "schedule": "2018-03-26T00:52:15.424Z"
+  },
+  "aliasFlightNumber": ["BU456"]
+}
+
+****************/
