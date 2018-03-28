@@ -1,0 +1,33 @@
+namespace org.acme.airline.aircraft
+
+
+/** Aircraft resource */
+asset Aircraft identified by aircraftId {  
+  o String aircraftId
+
+  o Ownership ownership default="LEASED"
+
+  o Integer firstClassSeats     range=[4,]    // Min of 4 first class seats
+  o Integer businessClassSeats  range=[6, 20] // Between 6 and 20 seats business class seats
+  o Integer economyClassSeats   range=[30,]   // At least 30 economy seats
+
+  o String nickName optional
+}
+
+enum Ownership {
+  o LEASED
+  o OWNED
+}
+
+/****** Sample data *
+
+{
+  "$class": "org.acme.airline.aircraft.Aircraft",
+  "aircraftId": "CRAFT001",
+  "ownership": "LEASED",
+  "firstClassSeats": 10,
+  "businessClassSeats": 40,
+  "economyClassSeats": 100
+}
+
+****************/
