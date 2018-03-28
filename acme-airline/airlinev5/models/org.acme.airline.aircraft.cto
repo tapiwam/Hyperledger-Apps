@@ -26,7 +26,7 @@ enum Ownership {
   "aircraftId": "CRAFT001",
   "ownership": "LEASED",
   "firstClassSeats": 10,
-  "businessClassSeats": 40,
+  "businessClassSeats": 15,
   "economyClassSeats": 100
 }
 
