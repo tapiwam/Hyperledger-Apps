@@ -187,4 +187,3 @@ $ docker ps
 # 5.2 - List images
 $ docker images
 ```
-

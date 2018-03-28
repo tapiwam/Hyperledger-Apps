@@ -1,6 +1,6 @@
 {
   "name": "airlinev4",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "Initial version for ACME airline.",
   "scripts": {
     "test": "mocha --recursive"
