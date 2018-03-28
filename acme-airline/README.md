@@ -28,3 +28,27 @@ As an architect you should look for a technology that can provided a "A seamless
     - How are data/models defined and how should those be handled
   - The application layer
     - How do we expose that data in a user friendly manner (via web apps and endpoints) that users or developers can build on to create efficient,  reliable aesthetically pleasing interfaces between participants?
+
+---
+
+## Fabric Setup
+
+1. Please refer to prerequisite setup documentation here: https://hyperledger.github.io/composer/latest/installing/installing-prereqs.html#ubuntu
+
+2. Development environment setup: https://hyperledger.github.io/composer/installing/development-tools.html
+
+### Common commands after installation
+
+```shell
+# Download docker images
+$ ./downloadFabric.sh
+
+# Start fabric - Spins up docker containers including peers, orderer, CA etc.
+$ ./startFabric.sh
+
+# Create teh Peer Admin card to connect to the fabric environment
+$ ./createPeerAdminCard.sh
+
+# Stop fabric
+$ ./stopFabric.sh
+```
